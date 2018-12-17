@@ -1,11 +1,11 @@
 ## fitbit-track-Python  (reference)
 https://towardsdatascience.com/collect-your-own-fitbit-data-with-python-ff145fa10873
 
-##Step
-1) Add app on Fitbit Developer.com
-2) Clone unofficial fitbit =>  git clone https://github.com/orcasgit/python-fitbit
-3) Get Client_ID and Client_Secret from Fitbit Developer add app page
-4) Write code
+## Step
+# 1) Add app on Fitbit Developer.com
+# 2) Clone unofficial fitbit =>  git clone https://github.com/orcasgit/python-fitbit
+# 3) Get Client_ID and Client_Secret from Fitbit Developer add app page
+# 4) Write code
 
 import fitbit
 import gather_keys_oauth2 as Oauth2
@@ -26,13 +26,13 @@ REFRESH_TOKEN = str(server.fitbit.client.session.token['refresh_token'])
 auth2_client = fitbit.Fitbit(CLIENT_ID, CLIENT_SECRET, oauth2=True, access_token=ACCESS_TOKEN, refresh_token=REFRESH_TOKEN)
 
 
-#Create date time format
+# Create date time format
 yesterday = str((datetime.datetime.now() - datetime.timedelta(days=1)).strftime("%Y%m%d"))
 yesterday2 = str((datetime.datetime.now() - datetime.timedelta(days=1)).strftime("%Y-%m-%d"))
 today = str(datetime.datetime.now().strftime("%Y%m%d"))
 
 
-#Start to pull data
+# Start to pull data
 fit_statsHR = auth2_client.intraday_time_series('activities/heart', base_date=yesterday2, detail_level='1sec')
 
 time_list = []
@@ -42,7 +42,7 @@ for i in fit_statsHR['activities-heart-intraday']['dataset']:
     time_list.append(i['time'])
 heartdf = pd.DataFrame({'Heart Rate':val_list,'Time':time_list})
 
-#Export to CSV daily file
+# Export to CSV daily file
 heartdf.to_csv('/Users/shsu/Downloads/python-fitbit-master/Heart/heart'+ \
                yesterday+'.csv', \
                columns=['Time','Heart Rate'], header=True, \
@@ -51,5 +51,5 @@ heartdf.to_csv('/Users/shsu/Downloads/python-fitbit-master/Heart/heart'+ \
                
                
 
-#Follow page: https://towardsdatascience.com/collect-your-own-fitbit-data-with-python-ff145fa10873
+# Follow page: https://towardsdatascience.com/collect-your-own-fitbit-data-with-python-ff145fa10873
 # Source:  https://github.com/orcasgit/python-fitbit
