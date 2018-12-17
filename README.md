@@ -6,6 +6,9 @@ https://towardsdatascience.com/collect-your-own-fitbit-data-with-python-ff145fa1
  2) Clone unofficial fitbit =>  git clone https://github.com/orcasgit/python-fitbit
  3) Get Client_ID and Client_Secret from Fitbit Developer add app page
  4) Write code
+ ![image](https://user-images.githubusercontent.com/16419246/50111959-9b968080-0203-11e9-84de-95ba7f0fa248.png)
+ ![image](https://user-images.githubusercontent.com/16419246/50111997-c385e400-0203-11e9-8960-94759a71716c.png)
+![image](https://user-images.githubusercontent.com/16419246/50112075-f62fdc80-0203-11e9-82f5-7a6dfd6fef58.png)
 
 
 import fitbit
