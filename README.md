@@ -7,12 +7,13 @@ https://towardsdatascience.com/collect-your-own-fitbit-data-with-python-ff145fa1
  3) Get Client_ID and Client_Secret from Fitbit Developer add app page
  4) Write code
 
- import fitbit
- import gather_keys_oauth2 as Oauth2
- import pandas as pd 
- import datetime
- CLIENT_ID = '22CPDQ'   (CHANGE TO OUR CLIENT ID)
- CLIENT_SECRET = '56662aa8bf31823e4137dfbf48a1b5f1'    (CHANGE TO OUR CLIENT SECRET)
+
+import fitbit
+import gather_keys_oauth2 as Oauth2
+import pandas as pd 
+import datetime
+CLIENT_ID = '22CPDQ'   (CHANGE TO OUR CLIENT ID)
+CLIENT_SECRET = '56662aa8bf31823e4137dfbf48a1b5f1'    (CHANGE TO OUR CLIENT SECRET)
 
 server = Oauth2.OAuth2Server(CLIENT_ID, CLIENT_SECRET)
 server.browser_authorize()
