@@ -57,7 +57,7 @@ heartdf.to_csv('/Users/shsu/Downloads/python-fitbit-master/Heart/heart'+ \
 
 # Follow page: https://towardsdatascience.com/collect-your-own-fitbit-data-with-python-ff145fa10873
 # Source:  https://github.com/orcasgit/python-fitbit
-
+# No coding required:  http://shishu.info/2016/06/how-to-download-your-fitbit-second-level-data-without-coding/
 
 
 
