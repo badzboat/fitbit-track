@@ -57,3 +57,15 @@ heartdf.to_csv('/Users/shsu/Downloads/python-fitbit-master/Heart/heart'+ \
 
 # Follow page: https://towardsdatascience.com/collect-your-own-fitbit-data-with-python-ff145fa10873
 # Source:  https://github.com/orcasgit/python-fitbit
+
+
+
+
+
+
+
+## Calling data example
+After getting ACCESS_TOKEN and REQUEST_TOKEN
+
+# mom_data = auth2_client.activities(date='2018-11-25')
+{u'activities': [], u'goals': {u'activeMinutes': 30, u'distance': 5, u'caloriesOut': 1872, u'steps': 10000, u'floors': 10}, u'summary': {u'distances': [{u'distance': 0.22, u'activity': u'total'}, {u'distance': 0.22, u'activity': u'tracker'}, {u'distance': 0, u'activity': u'loggedActivities'}, {u'distance': 0, u'activity': u'veryActive'}, {u'distance': 0, u'activity': u'moderatelyActive'}, {u'distance': 0.22, u'activity': u'lightlyActive'}, {u'distance': 0, u'activity': u'sedentaryActive'}], u'marginalCalories': 26, u'elevation': 0, u'sedentaryMinutes': 1424, u'lightlyActiveMinutes': 16, u'caloriesOut': 1114, u'caloriesBMR': 1072, u'heartRateZones': [{u'max': 75, u'caloriesOut': 16.7625, u'minutes': 18, u'name': u'Out of Range', u'min': 30}, {u'max': 105, u'caloriesOut': 66.6775, u'minutes': 39, u'name': u'Fat Burn', u'min': 75}, {u'max': 127, u'caloriesOut': 0, u'minutes': 0, u'name': u'Cardio', u'min': 105}, {u'max': 220, u'caloriesOut': 0, u'minutes': 0, u'name': u'Peak', u'min': 127}], u'fairlyActiveMinutes': 0, u'veryActiveMinutes': 0, u'activityCalories': 47, u'steps': 591, u'floors': 0, u'activeScore': -1}}
