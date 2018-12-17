@@ -1,11 +1,11 @@
 ## fitbit-track-Python  (reference)
 https://towardsdatascience.com/collect-your-own-fitbit-data-with-python-ff145fa10873
 
-#Step
-#1) Add app on Fitbit Developer.com
-#2) Clone unofficial fitbit =>  git clone https://github.com/orcasgit/python-fitbit
-#3) Get Client_ID and Client_Secret from Fitbit Developer add app page
-#4) Write code
+##Step
+1) Add app on Fitbit Developer.com
+2) Clone unofficial fitbit =>  git clone https://github.com/orcasgit/python-fitbit
+3) Get Client_ID and Client_Secret from Fitbit Developer add app page
+4) Write code
 
 import fitbit
 import gather_keys_oauth2 as Oauth2
