@@ -12,7 +12,7 @@ https://towardsdatascience.com/collect-your-own-fitbit-data-with-python-ff145fa1
 
 
 import fitbit  
-import gather_keys_oauth2 as Oauth2  
+import gather_keys_oauth2 as Oauth2      (From git clone: https://github.com/orcasgit/python-fitbit)
 import pandas as pd   
 import datetime  
 CLIENT_ID = '22CPDQ'   (CHANGE TO OUR CLIENT ID)  
