@@ -44,6 +44,7 @@ val_list = []
 for i in fit_statsHR['activities-heart-intraday']['dataset']:
 - val_list.append(i['value'])  
 - time_list.append(i['time'])  
+  
 heartdf = pd.DataFrame({'Heart Rate':val_list,'Time':time_list})  
   
 # Export to CSV daily file  
